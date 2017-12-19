@@ -1,0 +1,122 @@
+massmatrix = {{2*Subscript[m, 1, 1]^2, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, 
+     {0, 0, 0, 0}}
+ 
+massmatrix /: massmatrix::usage = "mass matrix of the Higgs sector"
+ 
+Attributes[Subscript] = {NHoldRest}
+modelpars = {Subscript[m, 1, 1], Subscript[\[Lambda], 1]}
+ 
+modelpars /: modelpars::usage = "model parameters"
+ 
+Attributes[Subscript] = {NHoldRest}
+modelvars = {Subscript[h, "SM"], Superscript[G, 0], Superscript[G, "+"], 
+     Superscript[G, "-"]}
+ 
+modelvars /: modelvars::usage = "model variables"
+ 
+Attributes[Subscript] = {NHoldRest}
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+modelrealvars = {Subscript[h, "SM"], Superscript[G, 0]}
+ 
+modelrealvars /: modelrealvars::usage = "model real variables"
+ 
+Attributes[Subscript] = {NHoldRest}
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+modelcomplexvars = {Superscript[G, "+"], Superscript[G, "-"]}
+ 
+modelcomplexvars /: modelcomplexvars::usage = "model complex variables"
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+modelgoldstones = {Superscript[G, 0], Superscript[G, "+"], 
+     Superscript[G, "-"]}
+ 
+modelgoldstones /: modelgoldstones::usage = "model goldstone variables"
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+FRthreevertex = {{(-6*I)*Abs[Subscript[m, 1, 1]]*
+       Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, "SM"], 
+       Subscript[h, "SM"], Subscript[h, "SM"]}}, 
+     {(-2*I)*Abs[Subscript[m, 1, 1]]*Sqrt[Subscript[\[Lambda], 1]], 
+      {Subscript[h, "SM"], Superscript[G, 0], Superscript[G, 0]}}, 
+     {(-2*I)*Abs[Subscript[m, 1, 1]]*Sqrt[Subscript[\[Lambda], 1]], 
+      {Subscript[h, "SM"], Superscript[G, "+"], Superscript[G, "-"]}}}
+ 
+FRthreevertex /: FRthreevertex::usage = "three-vertex Feynman rules"
+ 
+Attributes[Subscript] = {NHoldRest}
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+FRfourvertex = {{(-6*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"], 
+       Subscript[h, "SM"], Subscript[h, "SM"], Subscript[h, "SM"]}}, 
+     {(-2*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"], 
+       Subscript[h, "SM"], Superscript[G, 0], Superscript[G, 0]}}, 
+     {(-2*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"], 
+       Subscript[h, "SM"], Superscript[G, "+"], Superscript[G, "-"]}}, 
+     {(-6*I)*Subscript[\[Lambda], 1], {Superscript[G, 0], Superscript[G, 0], 
+       Superscript[G, 0], Superscript[G, 0]}}, 
+     {(-2*I)*Subscript[\[Lambda], 1], {Superscript[G, 0], Superscript[G, 0], 
+       Superscript[G, "+"], Superscript[G, "-"]}}, 
+     {(-4*I)*Subscript[\[Lambda], 1], {Superscript[G, "+"], 
+       Superscript[G, "+"], Superscript[G, "-"], Superscript[G, "-"]}}}
+ 
+FRfourvertex /: FRfourvertex::usage = "four-vertex Feynman rules"
+ 
+Attributes[Subscript] = {NHoldRest}
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+VTM = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 1/Sqrt[2], 1/Sqrt[2]}, 
+     {0, 0, (-I)/Sqrt[2], I/Sqrt[2]}}
+ 
+VTM /: VTM::usage = "transformation matrix from higgsvars to modelvars"
+HiggsSectorAssumptions = {Element[Subscript[m, 1, 1] | 
+       Subscript[\[Lambda], 1], Reals], Subscript[\[Lambda], 1] > 0, True, 
+     Element[Subscript[a, 1] | Subscript[b, 1] | Subscript[c, 1] | 
+       Subscript[d, 1], Reals], Element[Subscript[h, "SM"] | 
+       Superscript[G, 0], Reals], Element[Superscript[G, "+"] | 
+       Superscript[G, "-"], Complexes]}
+ 
+HiggsSectorAssumptions /: HiggsSectorAssumptions::usage = 
+     "assumptions about the parameters and variables in the Higgs sector"
+ 
+Attributes[Subscript] = {NHoldRest}
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}
+HD1m = {(Subscript[c, 1] + I*Subscript[d, 1])/Sqrt[2], 
+     (Subscript[a, 1] + I*Subscript[b, 1])/Sqrt[2] + 
+      Sqrt[Subscript[m, 1, 1]^2/Subscript[\[Lambda], 1]]/Sqrt[2]}
+ 
+HD1m /: HD1m::usage = "first Higgs doublet expressed in real variables"
+ 
+Attributes[Subscript] = {NHoldRest}
+ConjugateHiggsVars[vars_] := vars[[{1, 2, 4, 3}]]
+ConjugateHV[mcv_] := ConjugateHiggsVars[mcv]
+ 
+ConjugateHV /: ConjugateHV::usage = 
+     "gives the conjugated list of mass and cp eigenstates"
+ 
+ConjugateHiggsVars[vars_] := vars[[{1, 2, 4, 3}]]
+subtrigrules = {Cos[ArcTan[x_]/2] -> Sqrt[1/2 + 1/(2*Sqrt[1 + x^2])], 
+     Sin[ArcTan[x_]/2] -> x/Sqrt[2 + 2*x^2 + 2*Sqrt[1 + x^2]], 
+     Sin[2*ArcTan[x_]] -> (2*x)/(1 + x^2), Cos[2*ArcTan[x_]] -> 
+      (1 - x^2)/(1 + x^2)}
+ 
+subtrigrules /: subtrigrules::usage = 
+     "some simplification and replacement rules which mathematica can't \
+handle"
+RemoveGoldstones[rules_] := Module[{expr = rules, sgs}, 
+     sgs = Table[ToString[modelgoldstones[[i]], InputForm], 
+        {i, 1, Length[modelgoldstones]}]; Select[expr, 
+        !Or @@ Table[StringContainsQ[ToString[#1, InputForm], sgs[[i]]], 
+           {i, 1, Length[sgs]}] & ]]
+ 
+RemoveGoldstones /: RemoveGoldstones::usage = 
+     "removes goldstone interaction terms"
+ 
+modelgoldstones = {Superscript[G, 0], Superscript[G, "+"], 
+     Superscript[G, "-"]}
+ 
+modelgoldstones /: modelgoldstones::usage = "model goldstone variables"
+ 
+Attributes[Superscript] = {NHoldRest, ReadProtected}

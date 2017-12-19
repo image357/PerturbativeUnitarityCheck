@@ -50,13 +50,9 @@ subtrigrules = { \
 m11 = Subscript[m,1,1];
 m22 = Subscript[m,2,2];
 l1 = Subscript[\[Lambda],1];
-l2 = Subscript[\[Lambda],2];
-l3 = Subscript[\[Lambda],3];
-l4 = Subscript[\[Lambda],4];
-l5 = Subscript[\[Lambda],5];
 
-modelpars = {m11,m22,l1,l2,l3,l4,l5};
-modelrealpars = {m11,m22,l1,l2,l3,l4,l5};
+modelpars = {m11,l1};
+modelrealpars = {m11,l1};
 modelcomplexpars = {};
 
 
@@ -66,12 +62,7 @@ b1 = Subscript[b,1];
 c1 = Subscript[c,1];
 d1 = Subscript[d,1];
 
-a2 = Subscript[a,2];
-b2 = Subscript[b,2];
-c2 = Subscript[c,2];
-d2 = Subscript[d,2];
-
-higgsvars = {a1,b1,c1,d1,a2,b2,c2,d2};
+higgsvars = {a1,b1,c1,d1};
 zerosubhiggs = Table[higgsvars[[i]]->0, {i,1,Length[higgsvars]}];
 
 
@@ -80,17 +71,13 @@ G0 = Superscript[G,0];
 GP = Superscript[G,"+"];
 GM = Superscript[G,"-"];
 hSM = Subscript[h,"SM"];
-H2P = Subsuperscript[H,2,"+"];
-H2M = Subsuperscript[H,2,"-"];
-h2 = Subscript[h,2];
-a2 = Subscript[a,2];
 
-modelvars = {hSM,h2,a2,H2P,H2M,G0,GP,GM};
-modelrealvars = {hSM,h2,a2,G0};
-modelcomplexvars = {H2P,H2M,GP,GM};
+modelvars = {hSM,G0,GP,GM};
+modelrealvars = {hSM,G0};
+modelcomplexvars = {GP,GM};
 modelgoldstones = {G0,GP,GM};
 
-ConjugateHiggsVars[vars_] := vars[[{1,2,3,5,4,6,8,7}]];
+ConjugateHiggsVars[vars_] := vars[[{1,2,4,3}]];
 ConjugateHV[mcv_] := ConjugateHiggsVars[mcv];
 
 
@@ -107,17 +94,9 @@ Assuming[HiggsSectorAssumptions,
 
 
 (* Higgs-Potential *)
-HiggsPotential[HD1_,HD2_] := Simplify[ \
+HiggsPotential[HD1_] := Simplify[ \
     - m11^2 * HiggsProduct[HD1,HD1] \
-    - m22^2 * HiggsProduct[HD2,HD2] \
     + l1 * HiggsProduct[HD1,HD1]^2 \
-    + l2 * HiggsProduct[HD2,HD2]^2 \
-    + l3 * HiggsProduct[HD1,HD1] * HiggsProduct[HD2,HD2] \
-    + l4 * HiggsProduct[HD1,HD2] * HiggsProduct[HD2,HD1] \
-    \
-    + l5/2 * (HiggsProduct[HD2,HD1]^2) \
-    \
-    + l5/2 * (HiggsProduct[HD1,HD2]^2) \
 ];
 
 
@@ -125,9 +104,8 @@ HiggsPotential[HD1_,HD2_] := Simplify[ \
 VEV = Sqrt[m11^2/l1/2];
 
 HD1m = HD[1/Sqrt[2]*(c1 + I*d1), VEV+1/Sqrt[2]*(a1 + I*b1)];
-HD2m = HD[1/Sqrt[2]*(c2 + I*d2), 1/Sqrt[2]*(a2 + I*b2)];
 
-V3Dm = HiggsPotential[HD1m,HD2m];
+V3Dm = HiggsPotential[HD1m];
 
 Print["HiggsSector: calculating mass matrix and vertices"];
 massmatrix = Simplify[D[V3Dm, {higgsvars, 2}] /. zerosubhiggs];
@@ -155,17 +133,12 @@ ChargedFieldTransformationMatrix[dim_,indreal_,indimag_] := Table[
 ];
 
 
-(* from c1,d1,c2,d2 to GP,GM,H2P,H2M *)
-CFTMH2PI = ChargedFieldTransformationMatrix[Length[higgsvars],7,8]; (* ChargedFieldTransformationMatrixInverse *)
+(* from c1,d1 to GP,GM *)
 CFTMGPI = ChargedFieldTransformationMatrix[Length[higgsvars],3,4];
-CFTMI = CFTMH2PI.CFTMGPI;
-
-(* from hSM,G0,GP,GM,h,a,H2P,H2M to hSM,h,a,H2P,H2M,G0,GP,GM *)
-PermuteVariablesI = IdentityMatrix[Length[higgsvars]];
-PermuteVariablesI = PermuteVariablesI[[{1,5,6,7,8,2,3,4}]];
+CFTMI = CFTMGPI;
 
 (* all transformations combined *)
-VTMI = PermuteVariablesI.CFTMI; (* VariableTransformationMatrixInverse *)
+VTMI = CFTMI; (* VariableTransformationMatrixInverse *)
 VTM = ConjugateTranspose[VTMI];
 
 
@@ -252,7 +225,6 @@ Save[tempfile, VTM];
 Save[tempfile, HiggsSectorAssumptions];
 
 Save[tempfile, HD1m];
-Save[tempfile, HD2m];
 
 Save[tempfile, ConjugateHiggsVars];
 Save[tempfile, ConjugateHV];

@@ -127,10 +127,8 @@ KineticTerm[hd_,w_,b_,vars_List:HiggsSector`higgsvars,complexvars_List:{}] := Si
        ]
 , complexvars]];
 
-KineticLagrangian[HD1_,HD2_,HD3_,w_,b_,vars_List:HiggsSector`higgsvars,complexvars_List:{}] := \
-    KineticTerm[HD1,w,b,vars,complexvars] + \
-    KineticTerm[HD2,w,b,vars,complexvars] + \
-    KineticTerm[HD3,w,b,vars,complexvars]
+KineticLagrangian[HD1_,w_,b_,vars_List:HiggsSector`higgsvars,complexvars_List:{}] := \
+    KineticTerm[HD1,w,b,vars,complexvars] \
 ;
 
 subtrigrules = HiggsSector`subtrigrules;
@@ -138,7 +136,7 @@ transformedrealvars = Simplify[(HiggsSector`VTM.HiggsSector`modelvars) /. subtri
 subtransformedvars = Table[HiggsSector`higgsvars[[i]] -> transformedrealvars[[i]], {i,1,Length[HiggsSector`modelvars]}];
 
 (* kinetic Lagrangian *)
-K3Dm = KineticLagrangian[HiggsSector`HD1m, HiggsSector`HD2m, HiggsSector`HD3m, W, B, HiggsSector`higgsvars];
+K3Dm = KineticLagrangian[HiggsSector`HD1m, W, B, HiggsSector`higgsvars];
 
 (* electroweak mixing *)
 subchargedvb1 = Table[W1[[i]] ->   (WP[[i]]+WM[[i]])/Sqrt[2], {i,1,4}];
