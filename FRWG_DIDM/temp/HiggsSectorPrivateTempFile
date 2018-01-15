@@ -5,12 +5,12 @@ massmatrix = {{2*Subscript[m, 1, 1]^2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         2*Subscript[\[Lambda], 1]*Subscript[m, 2, 2]^2)/
        (2*Subscript[\[Lambda], 1]), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
      {0, 0, (Subscript[\[Lambda], 3]*Subscript[m, 1, 1]^2 + 
-        Subscript[\[Lambda], 4]*Subscript[m, 1, 1]^2 - 
+        Subscript[\[Lambda], 4]*Subscript[m, 1, 1]^2 + 
         Subscript[\[Lambda], 6]*Subscript[m, 1, 1]^2 - 
         2*Subscript[\[Lambda], 1]*Subscript[m, 2, 2]^2)/
        (2*Subscript[\[Lambda], 1]), 0, 0, 0, 0, 0, 0, 0, 0, 0}, 
      {0, 0, 0, (Subscript[\[Lambda], 3]*Subscript[m, 1, 1]^2 + 
-        Subscript[\[Lambda], 4]*Subscript[m, 1, 1]^2 + 
+        Subscript[\[Lambda], 4]*Subscript[m, 1, 1]^2 - 
         Subscript[\[Lambda], 6]*Subscript[m, 1, 1]^2 - 
         2*Subscript[\[Lambda], 1]*Subscript[m, 2, 2]^2)/
        (2*Subscript[\[Lambda], 1]), 0, 0, 0, 0, 0, 0, 0, 0}, 
@@ -86,11 +86,11 @@ FRthreevertex = {{(-6*I)*Abs[Subscript[m, 1, 1]]*
          Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]))/
        Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, "SM"], Subscript[h, 2], 
        Subscript[h, 2]}}, {((-I)*Abs[Subscript[m, 1, 1]]*
-        (Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
+        (Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
          Subscript[\[Lambda], 6]))/Sqrt[Subscript[\[Lambda], 1]], 
       {Subscript[h, "SM"], Subscript[a, 2], Subscript[a, 2]}}, 
      {((-I)*Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 3] + 
-         Subscript[\[Lambda], 4] + Subscript[\[Lambda], 6]))/
+         Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]))/
        Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, "SM"], Subscript[h, 3], 
        Subscript[h, 3]}}, {((-I)*Abs[Subscript[m, 1, 1]]*
         (Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
@@ -107,29 +107,29 @@ FRthreevertex = {{(-6*I)*Abs[Subscript[m, 1, 1]]*
      {(-2*I)*Abs[Subscript[m, 1, 1]]*Sqrt[Subscript[\[Lambda], 1]], 
       {Subscript[h, "SM"], Superscript[G, "+"], Superscript[G, "-"]}}, 
      {(I*Abs[Subscript[m, 1, 1]]*Subscript[\[Lambda], 6])/
-       Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, 2], Subscript[a, 3], 
+       Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, 2], Subscript[a, 2], 
        Superscript[G, 0]}}, {((-I/2)*Abs[Subscript[m, 1, 1]]*
         (Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]))/
        Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, 2], 
+       Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
+     {((-I/2)*Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] - 
+         Subscript[\[Lambda], 6]))/Sqrt[Subscript[\[Lambda], 1]], 
+      {Subscript[h, 2], Subsuperscript[H, 2, "-"], Superscript[G, "+"]}}, 
+     {-(Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] + 
+          Subscript[\[Lambda], 6]))/(2*Sqrt[Subscript[\[Lambda], 1]]), 
+      {Subscript[a, 2], Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
+     {(Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] + 
+         Subscript[\[Lambda], 6]))/(2*Sqrt[Subscript[\[Lambda], 1]]), 
+      {Subscript[a, 2], Subsuperscript[H, 2, "-"], Superscript[G, "+"]}}, 
+     {(I*Abs[Subscript[m, 1, 1]]*Subscript[\[Lambda], 6])/
+       Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, 3], Subscript[a, 3], 
+       Superscript[G, 0]}}, {((-I/2)*Abs[Subscript[m, 1, 1]]*
+        (Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]))/
+       Sqrt[Subscript[\[Lambda], 1]], {Subscript[h, 3], 
        Subsuperscript[H, 3, "+"], Superscript[G, "-"]}}, 
      {((-I/2)*Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] - 
          Subscript[\[Lambda], 6]))/Sqrt[Subscript[\[Lambda], 1]], 
-      {Subscript[h, 2], Subsuperscript[H, 3, "-"], Superscript[G, "+"]}}, 
-     {((-I)*Abs[Subscript[m, 1, 1]]*Subscript[\[Lambda], 6])/
-       Sqrt[Subscript[\[Lambda], 1]], {Subscript[a, 2], Subscript[h, 3], 
-       Superscript[G, 0]}}, 
-     {-(Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] - 
-          Subscript[\[Lambda], 6]))/(2*Sqrt[Subscript[\[Lambda], 1]]), 
-      {Subscript[a, 2], Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
-     {(Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] - 
-         Subscript[\[Lambda], 6]))/(2*Sqrt[Subscript[\[Lambda], 1]]), 
-      {Subscript[a, 2], Subsuperscript[H, 2, "-"], Superscript[G, "+"]}}, 
-     {((-I/2)*Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] + 
-         Subscript[\[Lambda], 6]))/Sqrt[Subscript[\[Lambda], 1]], 
-      {Subscript[h, 3], Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
-     {((-I/2)*Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] + 
-         Subscript[\[Lambda], 6]))/Sqrt[Subscript[\[Lambda], 1]], 
-      {Subscript[h, 3], Subsuperscript[H, 2, "-"], Superscript[G, "+"]}}, 
+      {Subscript[h, 3], Subsuperscript[H, 3, "-"], Superscript[G, "+"]}}, 
      {-(Abs[Subscript[m, 1, 1]]*(Subscript[\[Lambda], 4] + 
           Subscript[\[Lambda], 6]))/(2*Sqrt[Subscript[\[Lambda], 1]]), 
       {Subscript[a, 3], Subsuperscript[H, 3, "+"], Superscript[G, "-"]}}, 
@@ -149,10 +149,10 @@ FRfourvertex = {{(-6*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"],
      {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[h, "SM"], Subscript[h, "SM"], 
        Subscript[h, 2], Subscript[h, 2]}}, 
-     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
+     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
         Subscript[\[Lambda], 6]), {Subscript[h, "SM"], Subscript[h, "SM"], 
        Subscript[a, 2], Subscript[a, 2]}}, 
-     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
+     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[h, "SM"], Subscript[h, "SM"], 
        Subscript[h, 3], Subscript[h, 3]}}, 
      {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
@@ -166,24 +166,24 @@ FRfourvertex = {{(-6*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"],
        Superscript[G, 0]}}, {(-2*I)*Subscript[\[Lambda], 1], 
       {Subscript[h, "SM"], Subscript[h, "SM"], Superscript[G, "+"], 
        Superscript[G, "-"]}}, {I*Subscript[\[Lambda], 6], 
-      {Subscript[h, "SM"], Subscript[h, 2], Subscript[a, 3], 
+      {Subscript[h, "SM"], Subscript[h, 2], Subscript[a, 2], 
        Superscript[G, 0]}}, {(-I/2)*(Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[h, "SM"], Subscript[h, 2], 
-       Subsuperscript[H, 3, "+"], Superscript[G, "-"]}}, 
+       Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
      {(-I/2)*(Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]), 
-      {Subscript[h, "SM"], Subscript[h, 2], Subsuperscript[H, 3, "-"], 
-       Superscript[G, "+"]}}, {(-I)*Subscript[\[Lambda], 6], 
-      {Subscript[h, "SM"], Subscript[a, 2], Subscript[h, 3], 
-       Superscript[G, 0]}}, {(-Subscript[\[Lambda], 4] + 
+      {Subscript[h, "SM"], Subscript[h, 2], Subsuperscript[H, 2, "-"], 
+       Superscript[G, "+"]}}, {(-Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6])/2, {Subscript[h, "SM"], Subscript[a, 2], 
        Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
-     {(Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6])/2, 
+     {(Subscript[\[Lambda], 4] + Subscript[\[Lambda], 6])/2, 
       {Subscript[h, "SM"], Subscript[a, 2], Subsuperscript[H, 2, "-"], 
-       Superscript[G, "+"]}}, {(-I/2)*(Subscript[\[Lambda], 4] + 
+       Superscript[G, "+"]}}, {I*Subscript[\[Lambda], 6], 
+      {Subscript[h, "SM"], Subscript[h, 3], Subscript[a, 3], 
+       Superscript[G, 0]}}, {(-I/2)*(Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[h, "SM"], Subscript[h, 3], 
-       Subsuperscript[H, 2, "+"], Superscript[G, "-"]}}, 
-     {(-I/2)*(Subscript[\[Lambda], 4] + Subscript[\[Lambda], 6]), 
-      {Subscript[h, "SM"], Subscript[h, 3], Subsuperscript[H, 2, "-"], 
+       Subsuperscript[H, 3, "+"], Superscript[G, "-"]}}, 
+     {(-I/2)*(Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]), 
+      {Subscript[h, "SM"], Subscript[h, 3], Subsuperscript[H, 3, "-"], 
        Superscript[G, "+"]}}, {(-Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6])/2, {Subscript[h, "SM"], Subscript[a, 3], 
        Subsuperscript[H, 3, "+"], Superscript[G, "-"]}}, 
@@ -191,187 +191,51 @@ FRfourvertex = {{(-6*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"],
       {Subscript[h, "SM"], Subscript[a, 3], Subsuperscript[H, 3, "-"], 
        Superscript[G, "+"]}}, {(-6*I)*Subscript[\[Lambda], 2], 
       {Subscript[h, 2], Subscript[h, 2], Subscript[h, 2], Subscript[h, 2]}}, 
-     {(-3*(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]))/2, 
-      {Subscript[h, 2], Subscript[h, 2], Subscript[h, 2], Subscript[a, 2]}}, 
-     {((3*I)/2)*(Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 
-         9]), {Subscript[h, 2], Subscript[h, 2], Subscript[h, 2], 
-       Subscript[h, 3]}}, {(-I)*(-Conjugate[Subscript[\[Lambda], 8]] + 
-        OverHat[Subscript[\[Lambda], 3]] + OverHat[Subscript[\[Lambda], 4]] - 
-        Subscript[\[Lambda], 8]), {Subscript[h, 2], Subscript[h, 2], 
-       Subscript[a, 2], Subscript[a, 2]}}, 
-     {Conjugate[Subscript[\[Lambda], 8]] - Subscript[\[Lambda], 8], 
-      {Subscript[h, 2], Subscript[h, 2], Subscript[a, 2], Subscript[h, 3]}}, 
-     {(-I/2)*(-Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]), 
-      {Subscript[h, 2], Subscript[h, 2], Subscript[a, 2], Subscript[a, 3]}}, 
-     {(-I)*(Conjugate[Subscript[\[Lambda], 8]] + 
-        OverHat[Subscript[\[Lambda], 3]] + OverHat[Subscript[\[Lambda], 4]] + 
-        Subscript[\[Lambda], 8]), {Subscript[h, 2], Subscript[h, 2], 
-       Subscript[h, 3], Subscript[h, 3]}}, 
-     {(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 2], Subscript[h, 2], Subscript[h, 3], Subscript[a, 3]}}, 
      {(-2*I)*Subscript[\[Lambda], 2], {Subscript[h, 2], Subscript[h, 2], 
-       Subscript[a, 3], Subscript[a, 3]}}, 
-     {(-I)*OverHat[Subscript[\[Lambda], 3]], {Subscript[h, 2], 
-       Subscript[h, 2], Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, 
-        "-"]}}, {I*Conjugate[Subscript[\[Lambda], 9]], 
+       Subscript[a, 2], Subscript[a, 2]}}, {(-2*I)*Subscript[\[Lambda], 2], 
       {Subscript[h, 2], Subscript[h, 2], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 3, "-"]}}, {I*Subscript[\[Lambda], 9], 
-      {Subscript[h, 2], Subscript[h, 2], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"]}}, {(-2*I)*Subscript[\[Lambda], 2], 
-      {Subscript[h, 2], Subscript[h, 2], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
+       Subsuperscript[H, 2, "-"]}}, 
      {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
         Subscript[\[Lambda], 6]), {Subscript[h, 2], Subscript[h, 2], 
        Superscript[G, 0], Superscript[G, 0]}}, {(-I)*Subscript[\[Lambda], 3], 
       {Subscript[h, 2], Subscript[h, 2], Superscript[G, "+"], 
-       Superscript[G, "-"]}}, 
-     {(3*(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]))/2, 
-      {Subscript[h, 2], Subscript[a, 2], Subscript[a, 2], Subscript[a, 2]}}, 
-     {(-I/2)*(Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 9]), 
-      {Subscript[h, 2], Subscript[a, 2], Subscript[a, 2], Subscript[h, 3]}}, 
-     {Conjugate[Subscript[\[Lambda], 8]] - Subscript[\[Lambda], 8], 
-      {Subscript[h, 2], Subscript[a, 2], Subscript[a, 2], Subscript[a, 3]}}, 
-     {(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 2], Subscript[a, 2], Subscript[h, 3], Subscript[h, 3]}}, 
-     {(-I)*(Conjugate[Subscript[\[Lambda], 8]] + Subscript[\[Lambda], 8]), 
-      {Subscript[h, 2], Subscript[a, 2], Subscript[h, 3], Subscript[a, 3]}}, 
-     {(-Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 2], Subscript[a, 2], Subscript[a, 3], Subscript[a, 3]}}, 
-     {(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 2], Subscript[a, 2], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"]}}, 
-     {(2*Conjugate[Subscript[\[Lambda], 8]] - OverHat[Subscript[\[Lambda], 
-          4]])/2, {Subscript[h, 2], Subscript[a, 2], Subsuperscript[H, 2, 
-        "+"], Subsuperscript[H, 3, "-"]}}, 
-     {(OverHat[Subscript[\[Lambda], 4]] - 2*Subscript[\[Lambda], 8])/2, 
-      {Subscript[h, 2], Subscript[a, 2], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"]}}, 
-     {(-Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 2], Subscript[a, 2], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
-     {((-3*I)/2)*(Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 
-         9]), {Subscript[h, 2], Subscript[h, 3], Subscript[h, 3], 
-       Subscript[h, 3]}}, {-Conjugate[Subscript[\[Lambda], 8]] + 
-       Subscript[\[Lambda], 8], {Subscript[h, 2], Subscript[h, 3], 
-       Subscript[h, 3], Subscript[a, 3]}}, 
-     {(-I/2)*(-Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]), 
-      {Subscript[h, 2], Subscript[h, 3], Subscript[a, 3], Subscript[a, 3]}}, 
-     {(-I/2)*(Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 9]), 
-      {Subscript[h, 2], Subscript[h, 3], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"]}}, 
-     {(-I)*(Conjugate[Subscript[\[Lambda], 8]] + 
-        OverHat[Subscript[\[Lambda], 4]]/2), {Subscript[h, 2], 
-       Subscript[h, 3], Subsuperscript[H, 2, "+"], Subsuperscript[H, 3, 
-        "-"]}}, {(-I)*(OverHat[Subscript[\[Lambda], 4]]/2 + 
-        Subscript[\[Lambda], 8]), {Subscript[h, 2], Subscript[h, 3], 
-       Subsuperscript[H, 2, "-"], Subsuperscript[H, 3, "+"]}}, 
-     {(-I/2)*(-Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]), 
-      {Subscript[h, 2], Subscript[h, 3], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
-     {(Subscript[\[Lambda], 4] + Subscript[\[Lambda], 6])/2, 
-      {Subscript[h, 2], Subsuperscript[H, 3, "+"], Superscript[G, 0], 
-       Superscript[G, "-"]}}, {(-Subscript[\[Lambda], 4] - 
+       Superscript[G, "-"]}}, {(Subscript[\[Lambda], 4] + 
         Subscript[\[Lambda], 6])/2, {Subscript[h, 2], 
-       Subsuperscript[H, 3, "-"], Superscript[G, 0], Superscript[G, "+"]}}, 
-     {(-6*I)*Subscript[\[Lambda], 2], {Subscript[a, 2], Subscript[a, 2], 
-       Subscript[a, 2], Subscript[a, 2]}}, 
-     {((-3*I)/2)*(Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 
-         9]), {Subscript[a, 2], Subscript[a, 2], Subscript[a, 2], 
-       Subscript[a, 3]}}, {(-2*I)*Subscript[\[Lambda], 2], 
-      {Subscript[a, 2], Subscript[a, 2], Subscript[h, 3], Subscript[h, 3]}}, 
-     {(-Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 9])/2, 
-      {Subscript[a, 2], Subscript[a, 2], Subscript[h, 3], Subscript[a, 3]}}, 
-     {(-I)*(Conjugate[Subscript[\[Lambda], 8]] + 
-        OverHat[Subscript[\[Lambda], 3]] + OverHat[Subscript[\[Lambda], 4]] + 
-        Subscript[\[Lambda], 8]), {Subscript[a, 2], Subscript[a, 2], 
-       Subscript[a, 3], Subscript[a, 3]}}, {(-2*I)*Subscript[\[Lambda], 2], 
-      {Subscript[a, 2], Subscript[a, 2], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"]}}, {(-I)*Conjugate[Subscript[\[Lambda], 9]], 
-      {Subscript[a, 2], Subscript[a, 2], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 3, "-"]}}, {(-I)*Subscript[\[Lambda], 9], 
-      {Subscript[a, 2], Subscript[a, 2], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"]}}, {(-I)*OverHat[Subscript[\[Lambda], 3]], 
-      {Subscript[a, 2], Subscript[a, 2], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
-     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
+       Subsuperscript[H, 2, "+"], Superscript[G, 0], Superscript[G, "-"]}}, 
+     {(-Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6])/2, 
+      {Subscript[h, 2], Subsuperscript[H, 2, "-"], Superscript[G, 0], 
+       Superscript[G, "+"]}}, {(-6*I)*Subscript[\[Lambda], 2], 
+      {Subscript[a, 2], Subscript[a, 2], Subscript[a, 2], Subscript[a, 2]}}, 
+     {(-2*I)*Subscript[\[Lambda], 2], {Subscript[a, 2], Subscript[a, 2], 
+       Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "-"]}}, 
+     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[a, 2], Subscript[a, 2], 
        Superscript[G, 0], Superscript[G, 0]}}, {(-I)*Subscript[\[Lambda], 3], 
       {Subscript[a, 2], Subscript[a, 2], Superscript[G, "+"], 
-       Superscript[G, "-"]}}, {(-I/2)*(Conjugate[Subscript[\[Lambda], 9]] + 
-        Subscript[\[Lambda], 9]), {Subscript[a, 2], Subscript[h, 3], 
-       Subscript[h, 3], Subscript[a, 3]}}, 
-     {-Conjugate[Subscript[\[Lambda], 8]] + Subscript[\[Lambda], 8], 
-      {Subscript[a, 2], Subscript[h, 3], Subscript[a, 3], Subscript[a, 3]}}, 
-     {((3*I)/2)*(Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 
-         9]), {Subscript[a, 2], Subscript[a, 3], Subscript[a, 3], 
-       Subscript[a, 3]}}, {(-I/2)*(Conjugate[Subscript[\[Lambda], 9]] + 
-        Subscript[\[Lambda], 9]), {Subscript[a, 2], Subscript[a, 3], 
-       Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "-"]}}, 
-     {(-I)*(Conjugate[Subscript[\[Lambda], 8]] + 
-        OverHat[Subscript[\[Lambda], 4]]/2), {Subscript[a, 2], 
-       Subscript[a, 3], Subsuperscript[H, 2, "+"], Subsuperscript[H, 3, 
-        "-"]}}, {(-I)*(OverHat[Subscript[\[Lambda], 4]]/2 + 
-        Subscript[\[Lambda], 8]), {Subscript[a, 2], Subscript[a, 3], 
-       Subsuperscript[H, 2, "-"], Subsuperscript[H, 3, "+"]}}, 
-     {(-I/2)*(-Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]), 
-      {Subscript[a, 2], Subscript[a, 3], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
-     {(-I/2)*(Subscript[\[Lambda], 4] + Subscript[\[Lambda], 6]), 
-      {Subscript[a, 2], Subsuperscript[H, 2, "+"], Superscript[G, 0], 
-       Superscript[G, "-"]}}, {(-I/2)*(Subscript[\[Lambda], 4] + 
+       Superscript[G, "-"]}}, {(-I/2)*(Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[a, 2], Subsuperscript[H, 2, 
-        "-"], Superscript[G, 0], Superscript[G, "+"]}}, 
-     {(-6*I)*Subscript[\[Lambda], 2], {Subscript[h, 3], Subscript[h, 3], 
-       Subscript[h, 3], Subscript[h, 3]}}, 
-     {(-3*(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]))/2, 
-      {Subscript[h, 3], Subscript[h, 3], Subscript[h, 3], Subscript[a, 3]}}, 
-     {(-I)*(-Conjugate[Subscript[\[Lambda], 8]] + 
-        OverHat[Subscript[\[Lambda], 3]] + OverHat[Subscript[\[Lambda], 4]] - 
-        Subscript[\[Lambda], 8]), {Subscript[h, 3], Subscript[h, 3], 
+        "+"], Superscript[G, 0], Superscript[G, "-"]}}, 
+     {(-I/2)*(Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6]), 
+      {Subscript[a, 2], Subsuperscript[H, 2, "-"], Superscript[G, 0], 
+       Superscript[G, "+"]}}, {(-6*I)*Subscript[\[Lambda], 2], 
+      {Subscript[h, 3], Subscript[h, 3], Subscript[h, 3], Subscript[h, 3]}}, 
+     {(-2*I)*Subscript[\[Lambda], 2], {Subscript[h, 3], Subscript[h, 3], 
        Subscript[a, 3], Subscript[a, 3]}}, {(-2*I)*Subscript[\[Lambda], 2], 
-      {Subscript[h, 3], Subscript[h, 3], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"]}}, {(-I)*Conjugate[Subscript[\[Lambda], 9]], 
-      {Subscript[h, 3], Subscript[h, 3], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 3, "-"]}}, {(-I)*Subscript[\[Lambda], 9], 
-      {Subscript[h, 3], Subscript[h, 3], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"]}}, {(-I)*OverHat[Subscript[\[Lambda], 3]], 
       {Subscript[h, 3], Subscript[h, 3], Subsuperscript[H, 3, "+"], 
        Subsuperscript[H, 3, "-"]}}, 
-     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
+     {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] + 
         Subscript[\[Lambda], 6]), {Subscript[h, 3], Subscript[h, 3], 
        Superscript[G, 0], Superscript[G, 0]}}, {(-I)*Subscript[\[Lambda], 3], 
       {Subscript[h, 3], Subscript[h, 3], Superscript[G, "+"], 
-       Superscript[G, "-"]}}, 
-     {(3*(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9]))/2, 
-      {Subscript[h, 3], Subscript[a, 3], Subscript[a, 3], Subscript[a, 3]}}, 
-     {(-Conjugate[Subscript[\[Lambda], 9]] + Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 3], Subscript[a, 3], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"]}}, 
-     {(-I)*((-I)*Conjugate[Subscript[\[Lambda], 8]] + 
-        (I/2)*OverHat[Subscript[\[Lambda], 4]]), {Subscript[h, 3], 
-       Subscript[a, 3], Subsuperscript[H, 2, "+"], Subsuperscript[H, 3, 
-        "-"]}}, {(-OverHat[Subscript[\[Lambda], 4]] + 
-        2*Subscript[\[Lambda], 8])/2, {Subscript[h, 3], Subscript[a, 3], 
-       Subsuperscript[H, 2, "-"], Subsuperscript[H, 3, "+"]}}, 
-     {(Conjugate[Subscript[\[Lambda], 9]] - Subscript[\[Lambda], 9])/2, 
-      {Subscript[h, 3], Subscript[a, 3], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
-     {(Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6])/2, 
-      {Subscript[h, 3], Subsuperscript[H, 2, "+"], Superscript[G, 0], 
-       Superscript[G, "-"]}}, {(-Subscript[\[Lambda], 4] + 
+       Superscript[G, "-"]}}, {(Subscript[\[Lambda], 4] + 
         Subscript[\[Lambda], 6])/2, {Subscript[h, 3], 
-       Subsuperscript[H, 2, "-"], Superscript[G, 0], Superscript[G, "+"]}}, 
-     {(-6*I)*Subscript[\[Lambda], 2], {Subscript[a, 3], Subscript[a, 3], 
-       Subscript[a, 3], Subscript[a, 3]}}, 
-     {(-I)*OverHat[Subscript[\[Lambda], 3]], {Subscript[a, 3], 
-       Subscript[a, 3], Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, 
-        "-"]}}, {I*Conjugate[Subscript[\[Lambda], 9]], 
-      {Subscript[a, 3], Subscript[a, 3], Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 3, "-"]}}, {I*Subscript[\[Lambda], 9], 
-      {Subscript[a, 3], Subscript[a, 3], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"]}}, {(-2*I)*Subscript[\[Lambda], 2], 
-      {Subscript[a, 3], Subscript[a, 3], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, 
+       Subsuperscript[H, 3, "+"], Superscript[G, 0], Superscript[G, "-"]}}, 
+     {(-Subscript[\[Lambda], 4] - Subscript[\[Lambda], 6])/2, 
+      {Subscript[h, 3], Subsuperscript[H, 3, "-"], Superscript[G, 0], 
+       Superscript[G, "+"]}}, {(-6*I)*Subscript[\[Lambda], 2], 
+      {Subscript[a, 3], Subscript[a, 3], Subscript[a, 3], Subscript[a, 3]}}, 
+     {(-2*I)*Subscript[\[Lambda], 2], {Subscript[a, 3], Subscript[a, 3], 
+       Subsuperscript[H, 3, "+"], Subsuperscript[H, 3, "-"]}}, 
      {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4] - 
         Subscript[\[Lambda], 6]), {Subscript[a, 3], Subscript[a, 3], 
        Superscript[G, 0], Superscript[G, 0]}}, {(-I)*Subscript[\[Lambda], 3], 
@@ -384,40 +248,20 @@ FRfourvertex = {{(-6*I)*Subscript[\[Lambda], 1], {Subscript[h, "SM"],
        Superscript[G, "+"]}}, {(-4*I)*Subscript[\[Lambda], 2], 
       {Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "+"], 
        Subsuperscript[H, 2, "-"], Subsuperscript[H, 2, "-"]}}, 
-     {(-2*I)*Conjugate[Subscript[\[Lambda], 9]], {Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "-"]}}, 
-     {(-4*I)*Conjugate[Subscript[\[Lambda], 8]], {Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "+"], Subsuperscript[H, 3, "-"], 
-       Subsuperscript[H, 3, "-"]}}, {(-2*I)*Subscript[\[Lambda], 6], 
-      {Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "+"], 
-       Superscript[G, "-"], Superscript[G, "-"]}}, 
-     {(-2*I)*Subscript[\[Lambda], 9], {Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"]}}, 
-     {(-I)*(OverHat[Subscript[\[Lambda], 3]] + 
-        OverHat[Subscript[\[Lambda], 4]]), {Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 2, "-"], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, {(-I)*Subscript[\[Lambda], 3], 
-      {Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "-"], 
-       Superscript[G, 0], Superscript[G, 0]}}, 
+     {(2*I)*Subscript[\[Lambda], 6], {Subsuperscript[H, 2, "+"], 
+       Subsuperscript[H, 2, "+"], Superscript[G, "-"], Superscript[G, "-"]}}, 
+     {(-I)*Subscript[\[Lambda], 3], {Subsuperscript[H, 2, "+"], 
+       Subsuperscript[H, 2, "-"], Superscript[G, 0], Superscript[G, 0]}}, 
      {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4]), 
       {Subsuperscript[H, 2, "+"], Subsuperscript[H, 2, "-"], 
        Superscript[G, "+"], Superscript[G, "-"]}}, 
-     {(2*I)*Conjugate[Subscript[\[Lambda], 9]], {Subsuperscript[H, 2, "+"], 
-       Subsuperscript[H, 3, "+"], Subsuperscript[H, 3, "-"], 
-       Subsuperscript[H, 3, "-"]}}, {(-4*I)*Subscript[\[Lambda], 8], 
-      {Subsuperscript[H, 2, "-"], Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"], Subsuperscript[H, 3, "+"]}}, 
-     {(-2*I)*Subscript[\[Lambda], 6], {Subsuperscript[H, 2, "-"], 
+     {(2*I)*Subscript[\[Lambda], 6], {Subsuperscript[H, 2, "-"], 
        Subsuperscript[H, 2, "-"], Superscript[G, "+"], Superscript[G, "+"]}}, 
-     {(2*I)*Subscript[\[Lambda], 9], {Subsuperscript[H, 2, "-"], 
-       Subsuperscript[H, 3, "+"], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"]}}, {(-4*I)*Subscript[\[Lambda], 2], 
+     {(-4*I)*Subscript[\[Lambda], 2], {Subsuperscript[H, 3, "+"], 
+       Subsuperscript[H, 3, "+"], Subsuperscript[H, 3, "-"], 
+       Subsuperscript[H, 3, "-"]}}, {(2*I)*Subscript[\[Lambda], 6], 
       {Subsuperscript[H, 3, "+"], Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "-"], Subsuperscript[H, 3, "-"]}}, 
-     {(2*I)*Subscript[\[Lambda], 6], {Subsuperscript[H, 3, "+"], 
-       Subsuperscript[H, 3, "+"], Superscript[G, "-"], Superscript[G, "-"]}}, 
+       Superscript[G, "-"], Superscript[G, "-"]}}, 
      {(-I)*Subscript[\[Lambda], 3], {Subsuperscript[H, 3, "+"], 
        Subsuperscript[H, 3, "-"], Superscript[G, 0], Superscript[G, 0]}}, 
      {(-I)*(Subscript[\[Lambda], 3] + Subscript[\[Lambda], 4]), 
@@ -442,10 +286,10 @@ Attributes[Superscript] = {NHoldRest, ReadProtected}
 VTM = {{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
       0, 0}, {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/Sqrt[2], 1/Sqrt[2]}, 
      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, (-I)/Sqrt[2], I/Sqrt[2]}, 
-     {0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 
+     {0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 
       0}, {0, 0, 0, 0, 0, 1/Sqrt[2], 1/Sqrt[2], 0, 0, 0, 0, 0}, 
      {0, 0, 0, 0, 0, (-I)/Sqrt[2], I/Sqrt[2], 0, 0, 0, 0, 0}, 
-     {0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 
+     {0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}, {0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 
       0}, {0, 0, 0, 0, 0, 0, 0, 1/Sqrt[2], 1/Sqrt[2], 0, 0, 0}, 
      {0, 0, 0, 0, 0, 0, 0, (-I)/Sqrt[2], I/Sqrt[2], 0, 0, 0}}
  

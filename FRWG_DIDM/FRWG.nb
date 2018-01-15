@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     52027,       1388]
-NotebookOptionsPosition[     50052,       1331]
-NotebookOutlinePosition[     50388,       1346]
-CellTagsIndexPosition[     50345,       1343]
+NotebookDataLength[     52372,       1374]
+NotebookOptionsPosition[     50491,       1332]
+NotebookOutlinePosition[     50839,       1347]
+CellTagsIndexPosition[     50796,       1344]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -38,45 +38,46 @@ Cell[BoxData[{
   3.70990535082701*^9}},ExpressionUUID->"ba3c388b-1700-4f33-8f68-\
 a034d362f5a8"],
 
-Cell[BoxData["\<\"/itp/fast/koepke/Dropbox/Masterarbeit/FRWGah\"\>"], "Output",
+Cell[BoxData["\<\"D:\\\\Dropbox\\\\Studium\\\\Masterarbeit\\\\PUC\\\\package\\\
+\\FRWG_DIDM\"\>"], "Output",
  CellChangeTimes->{
   3.709905365222279*^9, 3.709905762295518*^9, 3.709905987132392*^9, 
    3.709960501274434*^9, 3.710848383667449*^9, 3.710848707336101*^9, {
-   3.7221550254066133`*^9, 
-   3.7221550356655617`*^9}},ExpressionUUID->"ec438cee-e087-491a-8b78-\
-1b38b480f760"],
+   3.7221550254066133`*^9, 3.7221550356655617`*^9}, {3.725027998393983*^9, 
+   3.7250279986435833`*^9}},ExpressionUUID->"5c598c5d-cfbe-467a-b114-\
+2e456d2a9f72"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"using \
-/itp/fast/koepke/Dropbox/Masterarbeit/FRWGah/temp/HiggsSectorPrivateTempFile\"\
-\>"], "Print",
+D:\\\\Dropbox\\\\Studium\\\\Masterarbeit\\\\PUC\\\\package\\\\FRWG_DIDM\\\\\
+temp\\\\HiggsSectorPrivateTempFile\"\>"], "Print",
  CellChangeTimes->{
   3.709905373901655*^9, 3.709905770979411*^9, 3.709905987155158*^9, 
    3.709960509723434*^9, 3.710848401451936*^9, 3.710848707350597*^9, {
-   3.722155025422368*^9, 
-   3.722155035667453*^9}},ExpressionUUID->"56751a7a-0c1c-4887-8318-\
-f705a304a658"],
+   3.722155025422368*^9, 3.722155035667453*^9}, {3.725027998393983*^9, 
+   3.7250279986591835`*^9}},ExpressionUUID->"70051a8f-b1af-45b3-9ac5-\
+6c76927b30c2"],
 
 Cell[BoxData["\<\"using \
-/itp/fast/koepke/Dropbox/Masterarbeit/FRWGah/temp/BosonSectorPrivateTempFile\"\
-\>"], "Print",
+D:\\\\Dropbox\\\\Studium\\\\Masterarbeit\\\\PUC\\\\package\\\\FRWG_DIDM\\\\\
+temp\\\\BosonSectorPrivateTempFile\"\>"], "Print",
  CellChangeTimes->{
   3.709905373901655*^9, 3.709905770979411*^9, 3.709905987155158*^9, 
    3.709960509723434*^9, 3.710848401451936*^9, 3.710848707350597*^9, {
-   3.722155025422368*^9, 
-   3.722155035670266*^9}},ExpressionUUID->"0af930b2-4a4e-4616-b1df-\
-db22729c1d1d"],
+   3.722155025422368*^9, 3.722155035667453*^9}, {3.725027998393983*^9, 
+   3.7250279986591835`*^9}},ExpressionUUID->"d8918168-dd51-4597-87dd-\
+149e2b1fe29b"],
 
-Cell[BoxData["\<\"saving \
-/itp/fast/koepke/Dropbox/Masterarbeit/FRWGah/temp/UnitarityPrivateTempFile\"\>\
-"], "Print",
+Cell[BoxData["\<\"using \
+D:\\\\Dropbox\\\\Studium\\\\Masterarbeit\\\\PUC\\\\package\\\\FRWG_DIDM\\\\\
+temp\\\\UnitarityPrivateTempFile\"\>"], "Print",
  CellChangeTimes->{
   3.709905373901655*^9, 3.709905770979411*^9, 3.709905987155158*^9, 
    3.709960509723434*^9, 3.710848401451936*^9, 3.710848707350597*^9, {
-   3.722155025422368*^9, 
-   3.72215503857169*^9}},ExpressionUUID->"4b3ddc55-37f8-4605-9987-\
-efd51c18fcea"]
+   3.722155025422368*^9, 3.722155035667453*^9}, {3.725027998393983*^9, 
+   3.7250279986747837`*^9}},ExpressionUUID->"605f7cb7-92d7-4c47-a4d9-\
+5f7aba23f62f"]
 }, Open  ]]
 }, Open  ]],
 
@@ -128,7 +129,7 @@ Cell[BoxData[
         RowBox[{
          SubscriptBox["\[Lambda]", "4"], " ", 
          SubsuperscriptBox["m", 
-          RowBox[{"1", ",", "1"}], "2"]}], "-", 
+          RowBox[{"1", ",", "1"}], "2"]}], "+", 
         RowBox[{
          SubscriptBox["\[Lambda]", "6"], " ", 
          SubsuperscriptBox["m", 
@@ -150,7 +151,7 @@ Cell[BoxData[
         RowBox[{
          SubscriptBox["\[Lambda]", "4"], " ", 
          SubsuperscriptBox["m", 
-          RowBox[{"1", ",", "1"}], "2"]}], "+", 
+          RowBox[{"1", ",", "1"}], "2"]}], "-", 
         RowBox[{
          SubscriptBox["\[Lambda]", "6"], " ", 
          SubsuperscriptBox["m", 
@@ -245,9 +246,9 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{
-  3.710848780585579*^9, {3.722155025897257*^9, 
-   3.722155038894347*^9}},ExpressionUUID->"f4cc029b-fefc-4475-bf95-\
-0fe106594c42"]
+  3.710848780585579*^9, {3.722155025897257*^9, 3.722155038894347*^9}, 
+   3.725027998752784*^9},ExpressionUUID->"688e8d7c-b7a6-47d6-9765-\
+45c2f222476e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -308,9 +309,9 @@ Cell[BoxData[
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{
-  3.710848792936404*^9, {3.722155025919145*^9, 
-   3.7221550389369373`*^9}},ExpressionUUID->"b9924d77-35b7-4e16-bc99-\
-63cb8f7daee7"]
+  3.710848792936404*^9, {3.722155025919145*^9, 3.7221550389369373`*^9}, 
+   3.7250279987683835`*^9},ExpressionUUID->"85b6c6a0-7a17-41ae-b67a-\
+37539a8789a9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -366,7 +367,7 @@ Cell[BoxData[
          RowBox[{"(", 
           RowBox[{
            SubscriptBox["\[Lambda]", "3"], "+", 
-           SubscriptBox["\[Lambda]", "4"], "-", 
+           SubscriptBox["\[Lambda]", "4"], "+", 
            SubscriptBox["\[Lambda]", "6"]}], ")"}]}], 
         SqrtBox[
          SubscriptBox["\[Lambda]", "1"]]]}], 
@@ -385,7 +386,7 @@ Cell[BoxData[
          RowBox[{"(", 
           RowBox[{
            SubscriptBox["\[Lambda]", "3"], "+", 
-           SubscriptBox["\[Lambda]", "4"], "+", 
+           SubscriptBox["\[Lambda]", "4"], "-", 
            SubscriptBox["\[Lambda]", "6"]}], ")"}]}], 
         SqrtBox[
          SubscriptBox["\[Lambda]", "1"]]]}], 
@@ -530,7 +531,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["a", "3"]}],
+          SubscriptBox["a", "2"]}],
          HoldForm], ",", 
         TagBox[
          SubscriptBox["\<\"Z\"\>", "\[Nu]"],
@@ -556,7 +557,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          TemplateBox[{"H","3","\"+\""},
+          TemplateBox[{"H","2","\"+\""},
            "Subsuperscript"]}],
          HoldForm], ",", 
         TagBox[
@@ -584,7 +585,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          TemplateBox[{"H","3","\"-\""},
+          TemplateBox[{"H","2","\"-\""},
            "Subsuperscript"]}],
          HoldForm], ",", 
         TagBox[
@@ -612,7 +613,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["h", "3"]}],
+          SubscriptBox["h", "2"]}],
          HoldForm], ",", 
         TagBox[
          SubscriptBox["\<\"Z\"\>", "\[Nu]"],
@@ -696,7 +697,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["a", "2"]}],
+          SubscriptBox["a", "3"]}],
          HoldForm], ",", 
         TagBox[
          SubscriptBox["\<\"Z\"\>", "\[Nu]"],
@@ -722,7 +723,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          TemplateBox[{"H","2","\"+\""},
+          TemplateBox[{"H","3","\"+\""},
            "Subsuperscript"]}],
          HoldForm], ",", 
         TagBox[
@@ -750,7 +751,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          TemplateBox[{"H","2","\"-\""},
+          TemplateBox[{"H","3","\"-\""},
            "Subsuperscript"]}],
          HoldForm], ",", 
         TagBox[
@@ -778,7 +779,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["h", "2"]}],
+          SubscriptBox["h", "3"]}],
          HoldForm], ",", 
         TagBox[
          SubscriptBox["\<\"Z\"\>", "\[Nu]"],
@@ -842,6 +843,34 @@ RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \\\"\\\\[Nu]\\\"]]], \\\"Superscript\
           "Subsuperscript"],
          HoldForm]}], "}"}]},
      {
+      InterpretationBox["\<\"\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", FractionBox[\
+\\\"1\\\", \\\"2\\\"]}], \\\" \\\", RowBox[{\\\"Csc\\\", \\\"[\\\", \
+SubscriptBox[\\\"\[Theta]\\\", \\\"\\\\\\\"W\\\\\\\"\\\"], \\\"]\\\"}], \\\" \
+\\\", SubscriptBox[\\\"e\\\", \\\"\\\\\\\"EM\\\\\\\"\\\"]}]\\) \
+\\!\\(\\*TemplateBox[List[\\\"g\\\", RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \
+\\\"\\\\[Nu]\\\"]]], \\\"Superscript\\\", Rule[SyntaxForm, \
+SuperscriptBox]]\\)\"\>",
+       StringForm["`` ``", Rational[-1, 2] Csc[
+          Subscript[$CellContext`\[Theta], "W"]] 
+        Subscript[$CellContext`e, "EM"], 
+        Superscript[$CellContext`g, $CellContext`\[Mu] $CellContext`\[Nu]]],
+       Editable->False], 
+      RowBox[{"{", 
+       RowBox[{
+        TagBox[
+         TemplateBox[{"H","2","\"+\""},
+          "Subsuperscript"],
+         HoldForm], ",", 
+        TagBox[
+         RowBox[{
+          SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
+          SubscriptBox["h", "2"]}],
+         HoldForm], ",", 
+        TagBox[
+         TemplateBox[{"\"W\"","\[Nu]","\"-\""},
+          "Subsuperscript"],
+         HoldForm]}], "}"}]},
+     {
       InterpretationBox["\<\"\\!\\(\\*RowBox[{FractionBox[\\\"1\\\", \
 \\\"2\\\"], \\\" \\\", \\\"\[ImaginaryI]\\\", \\\" \\\", RowBox[{\\\"Csc\\\", \
 \\\"[\\\", SubscriptBox[\\\"\[Theta]\\\", \\\"\\\\\\\"W\\\\\\\"\\\"], \\\"]\\\
@@ -865,34 +894,6 @@ SuperscriptBox]]\\)\"\>",
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
           SubscriptBox["a", "2"]}],
-         HoldForm], ",", 
-        TagBox[
-         TemplateBox[{"\"W\"","\[Nu]","\"-\""},
-          "Subsuperscript"],
-         HoldForm]}], "}"}]},
-     {
-      InterpretationBox["\<\"\\!\\(\\*RowBox[{RowBox[{\\\"-\\\", FractionBox[\
-\\\"1\\\", \\\"2\\\"]}], \\\" \\\", RowBox[{\\\"Csc\\\", \\\"[\\\", \
-SubscriptBox[\\\"\[Theta]\\\", \\\"\\\\\\\"W\\\\\\\"\\\"], \\\"]\\\"}], \\\" \
-\\\", SubscriptBox[\\\"e\\\", \\\"\\\\\\\"EM\\\\\\\"\\\"]}]\\) \
-\\!\\(\\*TemplateBox[List[\\\"g\\\", RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \
-\\\"\\\\[Nu]\\\"]]], \\\"Superscript\\\", Rule[SyntaxForm, \
-SuperscriptBox]]\\)\"\>",
-       StringForm["`` ``", Rational[-1, 2] Csc[
-          Subscript[$CellContext`\[Theta], "W"]] 
-        Subscript[$CellContext`e, "EM"], 
-        Superscript[$CellContext`g, $CellContext`\[Mu] $CellContext`\[Nu]]],
-       Editable->False], 
-      RowBox[{"{", 
-       RowBox[{
-        TagBox[
-         TemplateBox[{"H","2","\"+\""},
-          "Subsuperscript"],
-         HoldForm], ",", 
-        TagBox[
-         RowBox[{
-          SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["h", "3"]}],
          HoldForm], ",", 
         TagBox[
          TemplateBox[{"\"W\"","\[Nu]","\"-\""},
@@ -951,6 +952,34 @@ RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \\\"\\\\[Nu]\\\"]]], \\\"Superscript\
          HoldForm]}], "}"}]},
      {
       InterpretationBox["\<\"\\!\\(\\*RowBox[{FractionBox[\\\"1\\\", \
+\\\"2\\\"], \\\" \\\", RowBox[{\\\"Csc\\\", \\\"[\\\", SubscriptBox[\\\"\
+\[Theta]\\\", \\\"\\\\\\\"W\\\\\\\"\\\"], \\\"]\\\"}], \\\" \\\", \
+SubscriptBox[\\\"e\\\", \\\"\\\\\\\"EM\\\\\\\"\\\"]}]\\) \
+\\!\\(\\*TemplateBox[List[\\\"g\\\", RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \
+\\\"\\\\[Nu]\\\"]]], \\\"Superscript\\\", Rule[SyntaxForm, \
+SuperscriptBox]]\\)\"\>",
+       StringForm["`` ``", Rational[1, 2] Csc[
+          Subscript[$CellContext`\[Theta], "W"]] 
+        Subscript[$CellContext`e, "EM"], 
+        Superscript[$CellContext`g, $CellContext`\[Mu] $CellContext`\[Nu]]],
+       Editable->False], 
+      RowBox[{"{", 
+       RowBox[{
+        TagBox[
+         TemplateBox[{"H","2","\"-\""},
+          "Subsuperscript"],
+         HoldForm], ",", 
+        TagBox[
+         RowBox[{
+          SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
+          SubscriptBox["h", "2"]}],
+         HoldForm], ",", 
+        TagBox[
+         TemplateBox[{"\"W\"","\[Nu]","\"+\""},
+          "Subsuperscript"],
+         HoldForm]}], "}"}]},
+     {
+      InterpretationBox["\<\"\\!\\(\\*RowBox[{FractionBox[\\\"1\\\", \
 \\\"2\\\"], \\\" \\\", \\\"\[ImaginaryI]\\\", \\\" \\\", RowBox[{\\\"Csc\\\", \
 \\\"[\\\", SubscriptBox[\\\"\[Theta]\\\", \\\"\\\\\\\"W\\\\\\\"\\\"], \\\"]\\\
 \"}], \\\" \\\", SubscriptBox[\\\"e\\\", \\\"\\\\\\\"EM\\\\\\\"\\\"]}]\\) \\!\
@@ -973,34 +1002,6 @@ SuperscriptBox]]\\)\"\>",
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
           SubscriptBox["a", "2"]}],
-         HoldForm], ",", 
-        TagBox[
-         TemplateBox[{"\"W\"","\[Nu]","\"+\""},
-          "Subsuperscript"],
-         HoldForm]}], "}"}]},
-     {
-      InterpretationBox["\<\"\\!\\(\\*RowBox[{FractionBox[\\\"1\\\", \
-\\\"2\\\"], \\\" \\\", RowBox[{\\\"Csc\\\", \\\"[\\\", SubscriptBox[\\\"\
-\[Theta]\\\", \\\"\\\\\\\"W\\\\\\\"\\\"], \\\"]\\\"}], \\\" \\\", \
-SubscriptBox[\\\"e\\\", \\\"\\\\\\\"EM\\\\\\\"\\\"]}]\\) \
-\\!\\(\\*TemplateBox[List[\\\"g\\\", RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \
-\\\"\\\\[Nu]\\\"]]], \\\"Superscript\\\", Rule[SyntaxForm, \
-SuperscriptBox]]\\)\"\>",
-       StringForm["`` ``", Rational[1, 2] Csc[
-          Subscript[$CellContext`\[Theta], "W"]] 
-        Subscript[$CellContext`e, "EM"], 
-        Superscript[$CellContext`g, $CellContext`\[Mu] $CellContext`\[Nu]]],
-       Editable->False], 
-      RowBox[{"{", 
-       RowBox[{
-        TagBox[
-         TemplateBox[{"H","2","\"-\""},
-          "Subsuperscript"],
-         HoldForm], ",", 
-        TagBox[
-         RowBox[{
-          SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["h", "3"]}],
          HoldForm], ",", 
         TagBox[
          TemplateBox[{"\"W\"","\[Nu]","\"+\""},
@@ -1079,7 +1080,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["h", "2"]}],
+          SubscriptBox["h", "3"]}],
          HoldForm], ",", 
         TagBox[
          TemplateBox[{"\"W\"","\[Nu]","\"-\""},
@@ -1187,7 +1188,7 @@ SuperscriptBox]]\\)\"\>",
         TagBox[
          RowBox[{
           SubscriptBox["\<\"\[PartialD]\"\>", "\[Mu]"], " ", 
-          SubscriptBox["h", "2"]}],
+          SubscriptBox["h", "3"]}],
          HoldForm], ",", 
         TagBox[
          TemplateBox[{"\"W\"","\[Nu]","\"+\""},
@@ -1286,9 +1287,9 @@ RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \\\"\\\\[Nu]\\\"]]], \\\"Superscript\
         Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
   Function[BoxForm`e$, 
    MatrixForm[BoxForm`e$]]]], "Output",
- CellChangeTimes->{{3.7221551072801237`*^9, 
-  3.722155120163952*^9}},ExpressionUUID->"761b100b-4a2b-4fc1-8de7-\
-5e1a039d6b9a"]
+ CellChangeTimes->{{3.7221551072801237`*^9, 3.722155120163952*^9}, 
+   3.7250279987995834`*^9},ExpressionUUID->"8106a388-e187-4228-87fd-\
+0c84bfc6066e"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1305,9 +1306,9 @@ Cell[BoxData[
 dcb5345c0228"],
 
 Cell[BoxData["False"], "Output",
- CellChangeTimes->{
-  3.722155060997692*^9},ExpressionUUID->"ba909fee-3af6-439a-b202-\
-5a7ad33c0124"]
+ CellChangeTimes->{3.722155060997692*^9, 
+  3.7250279998759856`*^9},ExpressionUUID->"a40163e6-3717-4f7a-834e-\
+23cc12bd28fe"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1324,14 +1325,14 @@ Cell[BoxData[
 3255fc2c9420"],
 
 Cell[BoxData["True"], "Output",
- CellChangeTimes->{
-  3.722155089763431*^9},ExpressionUUID->"a87927e0-5a64-48fb-9098-\
-bc9b4d49053a"]
+ CellChangeTimes->{3.722155089763431*^9, 
+  3.7250279999383855`*^9},ExpressionUUID->"83be5170-cf58-4283-b68b-\
+02546f40df3a"]
 }, Open  ]]
 },
-WindowSize->{230, 817},
-WindowMargins->{{509, Automatic}, {Automatic, 33}},
-FrontEndVersion->"11.1 for Linux x86 (64-bit) (April 18, 2017)",
+WindowSize->{1920, 998},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -1346,49 +1347,34 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 709, 16, 98, "Input", "ExpressionUUID" -> \
-"ba3c388b-1700-4f33-8f68-a034d362f5a8",
+Cell[580, 22, 709, 16, 83, "Input",ExpressionUUID->"ba3c388b-1700-4f33-8f68-a034d362f5a8",
  InitializationCell->True],
-Cell[1292, 40, 353, 6, 33, "Output", "ExpressionUUID" -> \
-"ec438cee-e087-491a-8b78-1b38b480f760"],
+Cell[1292, 40, 430, 7, 32, "Output",ExpressionUUID->"5c598c5d-cfbe-467a-b114-2e456d2a9f72"],
 Cell[CellGroupData[{
-Cell[1670, 50, 390, 8, 25, "Print", "ExpressionUUID" -> \
-"56751a7a-0c1c-4887-8318-f705a304a658"],
-Cell[2063, 60, 390, 8, 25, "Print", "ExpressionUUID" -> \
-"0af930b2-4a4e-4616-b1df-db22729c1d1d"],
-Cell[2456, 70, 388, 8, 25, "Print", "ExpressionUUID" -> \
-"4b3ddc55-37f8-4605-9987-efd51c18fcea"]
+Cell[1747, 51, 471, 8, 22, "Print",ExpressionUUID->"70051a8f-b1af-45b3-9ac5-6c76927b30c2"],
+Cell[2221, 61, 471, 8, 22, "Print",ExpressionUUID->"d8918168-dd51-4597-87dd-149e2b1fe29b"],
+Cell[2695, 71, 469, 8, 22, "Print",ExpressionUUID->"605f7cb7-92d7-4c47-a4d9-5f7aba23f62f"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2893, 84, 198, 4, 33, "Input", "ExpressionUUID" -> \
-"74cda4b5-846c-4e13-b3f0-2967d0001344"],
-Cell[3094, 90, 5683, 159, 430, "Output", "ExpressionUUID" -> \
-"f4cc029b-fefc-4475-bf95-0fe106594c42"]
+Cell[3213, 85, 198, 4, 28, "Input",ExpressionUUID->"74cda4b5-846c-4e13-b3f0-2967d0001344"],
+Cell[3414, 91, 5705, 159, 388, "Output",ExpressionUUID->"688e8d7c-b7a6-47d6-9765-45c2f222476e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8814, 254, 192, 4, 33, "Input", "ExpressionUUID" -> \
-"2e23c539-b2fa-410f-b554-56374e121ca8"],
-Cell[9009, 260, 1457, 52, 252, "Output", "ExpressionUUID" -> \
-"b9924d77-35b7-4e16-bc99-63cb8f7daee7"]
+Cell[9156, 255, 192, 4, 28, "Input",ExpressionUUID->"2e23c539-b2fa-410f-b554-56374e121ca8"],
+Cell[9351, 261, 1481, 52, 234, "Output",ExpressionUUID->"85b6c6a0-7a17-41ae-b67a-37539a8789a9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10503, 317, 199, 4, 33, "Input", "ExpressionUUID" -> \
-"90d4ea7a-456f-49b8-83ff-c79f41b7c423"],
-Cell[10705, 323, 38197, 967, 1123, "Output", "ExpressionUUID" -> \
-"761b100b-4a2b-4fc1-8de7-5e1a039d6b9a"]
+Cell[10869, 318, 199, 4, 28, "Input",ExpressionUUID->"90d4ea7a-456f-49b8-83ff-c79f41b7c423"],
+Cell[11071, 324, 38222, 967, 959, "Output",ExpressionUUID->"8106a388-e187-4228-87fd-0c84bfc6066e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[48939, 1295, 381, 9, 35, "Input", "ExpressionUUID" -> \
-"443536a8-8db5-4ddf-80d8-dcb5345c0228"],
-Cell[49323, 1306, 134, 3, 33, "Output", "ExpressionUUID" -> \
-"ba909fee-3af6-439a-b202-5a7ad33c0124"]
+Cell[49330, 1296, 381, 9, 28, "Input",ExpressionUUID->"443536a8-8db5-4ddf-80d8-dcb5345c0228"],
+Cell[49714, 1307, 158, 3, 32, "Output",ExpressionUUID->"a40163e6-3717-4f7a-834e-23cc12bd28fe"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[49494, 1314, 406, 9, 35, "Input", "ExpressionUUID" -> \
-"e56b1b02-7006-45d8-8617-3255fc2c9420"],
-Cell[49903, 1325, 133, 3, 33, "Output", "ExpressionUUID" -> \
-"a87927e0-5a64-48fb-9098-bc9b4d49053a"]
+Cell[49909, 1315, 406, 9, 28, "Input",ExpressionUUID->"e56b1b02-7006-45d8-8617-3255fc2c9420"],
+Cell[50318, 1326, 157, 3, 32, "Output",ExpressionUUID->"83be5170-cf58-4283-b68b-02546f40df3a"]
 }, Open  ]]
 }
 ]

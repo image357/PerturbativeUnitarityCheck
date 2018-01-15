@@ -171,6 +171,85 @@ FRthreevertex = {{(-I)*Csc[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"],
        Subsuperscript["W", 3, "+"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
        Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 2], 
        Derivative[0, 0, 0, 1][Subsuperscript[HiggsSector`Private`H, 2, "-"]], 
+       Subsuperscript["W", 4, "+"]}}, {(-I)*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`h, 3], 
+       Derivative[1, 0, 0, 0][Subscript[HiggsSector`Private`a, 3]], 
+       Subscript["Z", 1]}}, {(-I)*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`h, 3], 
+       Derivative[0, 1, 0, 0][Subscript[HiggsSector`Private`a, 3]], 
+       Subscript["Z", 2]}}, {(-I)*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`h, 3], 
+       Derivative[0, 0, 1, 0][Subscript[HiggsSector`Private`a, 3]], 
+       Subscript["Z", 3]}}, {(-I)*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`h, 3], 
+       Derivative[0, 0, 0, 1][Subscript[HiggsSector`Private`a, 3]], 
+       Subscript["Z", 4]}}, {(Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"])/2, {Subscript[HiggsSector`Private`h, 3], 
+       Derivative[1, 0, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 1, "-"]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[0, 1, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 2, "-"]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[0, 0, 1, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 3, "-"]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[0, 0, 0, 1][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 4, "-"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[1, 0, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 1, "+"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[0, 1, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 2, "+"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[0, 0, 1, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 3, "+"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subscript[HiggsSector`Private`h, 3], Derivative[0, 0, 0, 1][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 4, "+"]}}, {I*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[1, 0, 0, 0][Subscript[HiggsSector`Private`h, 3]], 
+       Subscript["Z", 1]}}, {I*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 1, 0, 0][Subscript[HiggsSector`Private`h, 3]], 
+       Subscript["Z", 2]}}, {I*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 0, 1, 0][Subscript[HiggsSector`Private`h, 3]], 
+       Subscript["Z", 3]}}, {I*Csc[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 0, 0, 1][Subscript[HiggsSector`Private`h, 3]], 
+       Subscript["Z", 4]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[1, 0, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 1, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 1, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 2, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 0, 1, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 3, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 0, 0, 1][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subsuperscript["W", 4, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[1, 0, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 1, "+"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 1, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 2, "+"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 0, 1, 0][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subsuperscript["W", 3, "+"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subscript[HiggsSector`Private`a, 3], 
+       Derivative[0, 0, 0, 1][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
        Subsuperscript["W", 4, "+"]}}, 
      {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
       {Subsuperscript[HiggsSector`Private`H, 2, "+"], Derivative[1, 0, 0, 0][
@@ -264,6 +343,98 @@ FRthreevertex = {{(-I)*Csc[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"],
        Subscript["Z", 4]}}, {Subscript[e, "EM"], 
       {Subsuperscript[HiggsSector`Private`H, 2, "-"], Derivative[0, 0, 0, 1][
         Subsuperscript[HiggsSector`Private`H, 2, "+"]], Subscript["A", 4]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[1, 0, 0, 0][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 1, "-"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 1, 0, 0][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 2, "-"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 0, 1, 0][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 3, "-"]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 0, 0, 1][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 4, "-"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[1, 0, 0, 0][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 1, "-"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 1, 0, 0][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 2, "-"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 0, 1, 0][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 3, "-"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 0, 0, 1][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 4, "-"]}}, 
+     {-(Cot[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"]), 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[1, 0, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], Subscript["Z", 1]}}, 
+     {-Subscript[e, "EM"], {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Derivative[1, 0, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subscript["A", 1]}}, {-(Cot[2*Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]), {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Derivative[0, 1, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subscript["Z", 2]}}, {-Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 1, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], Subscript["A", 2]}}, 
+     {-(Cot[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"]), 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 0, 1, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], Subscript["Z", 3]}}, 
+     {-Subscript[e, "EM"], {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Derivative[0, 0, 1, 0][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subscript["A", 3]}}, {-(Cot[2*Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]), {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Derivative[0, 0, 0, 1][Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       Subscript["Z", 4]}}, {-Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], Derivative[0, 0, 0, 1][
+        Subsuperscript[HiggsSector`Private`H, 3, "-"]], Subscript["A", 4]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[1, 0, 0, 0][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 1, "+"]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 1, 0, 0][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 2, "+"]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 0, 1, 0][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 3, "+"]}}, 
+     {(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 0, 0, 1][
+        Subscript[HiggsSector`Private`h, 3]], Subsuperscript["W", 4, "+"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[1, 0, 0, 0][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 1, "+"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 1, 0, 0][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 2, "+"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 0, 1, 0][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 3, "+"]}}, 
+     {(I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 0, 0, 1][
+        Subscript[HiggsSector`Private`a, 3]], Subsuperscript["W", 4, "+"]}}, 
+     {Cot[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[1, 0, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], Subscript["Z", 1]}}, 
+     {Subscript[e, "EM"], {Subsuperscript[HiggsSector`Private`H, 3, "-"], 
+       Derivative[1, 0, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subscript["A", 1]}}, {Cot[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subsuperscript[HiggsSector`Private`H, 3, "-"], 
+       Derivative[0, 1, 0, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subscript["Z", 2]}}, {Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 1, 0, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], Subscript["A", 2]}}, 
+     {Cot[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 0, 1, 0][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], Subscript["Z", 3]}}, 
+     {Subscript[e, "EM"], {Subsuperscript[HiggsSector`Private`H, 3, "-"], 
+       Derivative[0, 0, 1, 0][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subscript["A", 3]}}, {Cot[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"], {Subsuperscript[HiggsSector`Private`H, 3, "-"], 
+       Derivative[0, 0, 0, 1][Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       Subscript["Z", 4]}}, {Subscript[e, "EM"], 
+      {Subsuperscript[HiggsSector`Private`H, 3, "-"], Derivative[0, 0, 0, 1][
+        Subsuperscript[HiggsSector`Private`H, 3, "+"]], Subscript["A", 4]}}, 
      {I*Csc[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
       {Superscript[HiggsSector`Private`G, 0], Derivative[1, 0, 0, 0][
         Subscript[HiggsSector`Private`h, "SM"]], Subscript["Z", 1]}}, 
@@ -710,6 +881,160 @@ FRfourvertex = {{(I/2)*Csc[Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2,
         Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 2], 
        Subsuperscript[HiggsSector`Private`H, 2, "-"], Subsuperscript["W", 4, 
         "+"], Subscript["A", 4]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subscript[HiggsSector`Private`h, 3], Subsuperscript["W", 1, "+"], 
+       Subsuperscript["W", 1, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subscript[HiggsSector`Private`h, 3], Subsuperscript["W", 2, "+"], 
+       Subsuperscript["W", 2, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subscript[HiggsSector`Private`h, 3], Subsuperscript["W", 3, "+"], 
+       Subsuperscript["W", 3, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subscript[HiggsSector`Private`h, 3], Subsuperscript["W", 4, "+"], 
+       Subsuperscript["W", 4, "-"]}}, 
+     {(2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`h, 3], Subscript[HiggsSector`Private`h, 
+        3], Subscript["Z", 1], Subscript["Z", 1]}}, 
+     {(-2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`h, 3], Subscript[HiggsSector`Private`h, 
+        3], Subscript["Z", 2], Subscript["Z", 2]}}, 
+     {(-2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`h, 3], Subscript[HiggsSector`Private`h, 
+        3], Subscript["Z", 3], Subscript["Z", 3]}}, 
+     {(-2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`h, 3], Subscript[HiggsSector`Private`h, 
+        3], Subscript["Z", 4], Subscript["Z", 4]}}, 
+     {(-I/2)*Sec[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`h, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 1, "-"], 
+       Subscript["Z", 1]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 1, 
+        "-"], Subscript["A", 1]}}, {(I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 2, 
+        "-"], Subscript["Z", 2]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 2, 
+        "-"], Subscript["A", 2]}}, {(I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 3, 
+        "-"], Subscript["Z", 3]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 3, 
+        "-"], Subscript["A", 3]}}, {(I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 4, 
+        "-"], Subscript["Z", 4]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 4, 
+        "-"], Subscript["A", 4]}}, {(-I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 1, 
+        "+"], Subscript["Z", 1]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 1, 
+        "+"], Subscript["A", 1]}}, {(I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 2, 
+        "+"], Subscript["Z", 2]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 2, 
+        "+"], Subscript["A", 2]}}, {(I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 3, 
+        "+"], Subscript["Z", 3]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 3, 
+        "+"], Subscript["A", 3]}}, {(I/2)*Sec[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 4, 
+        "+"], Subscript["Z", 4]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`h, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 4, 
+        "+"], Subscript["A", 4]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`a, 3], 
+       Subscript[HiggsSector`Private`a, 3], Subsuperscript["W", 1, "+"], 
+       Subsuperscript["W", 1, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`a, 3], 
+       Subscript[HiggsSector`Private`a, 3], Subsuperscript["W", 2, "+"], 
+       Subsuperscript["W", 2, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`a, 3], 
+       Subscript[HiggsSector`Private`a, 3], Subsuperscript["W", 3, "+"], 
+       Subsuperscript["W", 3, "-"]}}, {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subscript[HiggsSector`Private`a, 3], 
+       Subscript[HiggsSector`Private`a, 3], Subsuperscript["W", 4, "+"], 
+       Subsuperscript["W", 4, "-"]}}, 
+     {(2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`a, 3], Subscript[HiggsSector`Private`a, 
+        3], Subscript["Z", 1], Subscript["Z", 1]}}, 
+     {(-2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`a, 3], Subscript[HiggsSector`Private`a, 
+        3], Subscript["Z", 2], Subscript["Z", 2]}}, 
+     {(-2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`a, 3], Subscript[HiggsSector`Private`a, 
+        3], Subscript["Z", 3], Subscript["Z", 3]}}, 
+     {(-2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subscript[HiggsSector`Private`a, 3], Subscript[HiggsSector`Private`a, 
+        3], Subscript["Z", 4], Subscript["Z", 4]}}, 
+     {-(Sec[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 1, "-"], 
+       Subscript["Z", 1]}}, {(Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 1, 
+        "-"], Subscript["A", 1]}}, 
+     {(Sec[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 2, "-"], 
+       Subscript["Z", 2]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 2, "-"], 
+       Subscript["A", 2]}}, {(Sec[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 3, 
+        "-"], Subscript["Z", 3]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 3, "-"], 
+       Subscript["A", 3]}}, {(Sec[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 4, 
+        "-"], Subscript["Z", 4]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "+"], Subsuperscript["W", 4, "-"], 
+       Subscript["A", 4]}}, {(Sec[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 1, 
+        "+"], Subscript["Z", 1]}}, 
+     {-(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 1, "+"], 
+       Subscript["A", 1]}}, 
+     {-(Sec[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 2, "+"], 
+       Subscript["Z", 2]}}, {(Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 2, 
+        "+"], Subscript["A", 2]}}, 
+     {-(Sec[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 3, "+"], 
+       Subscript["Z", 3]}}, {(Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 3, 
+        "+"], Subscript["A", 3]}}, 
+     {-(Sec[Subscript[\[Theta], "W"]]*Subscript[e, "EM"]^2)/2, 
+      {Subscript[HiggsSector`Private`a, 3], Subsuperscript[
+        HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 4, "+"], 
+       Subscript["Z", 4]}}, {(Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2)/2, {Subscript[HiggsSector`Private`a, 3], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 4, 
+        "+"], Subscript["A", 4]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]^2*
        Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 2, "+"], 
        Subsuperscript[HiggsSector`Private`H, 2, "-"], Subsuperscript["W", 1, 
         "+"], Subsuperscript["W", 1, "-"]}}, 
@@ -761,6 +1086,58 @@ FRfourvertex = {{(I/2)*Csc[Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2,
        Subscript["A", 3]}}, {(-2*I)*Subscript[e, "EM"]^2, 
       {Subsuperscript[HiggsSector`Private`H, 2, "+"], 
        Subsuperscript[HiggsSector`Private`H, 2, "-"], Subscript["A", 4], 
+       Subscript["A", 4]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 1, 
+        "+"], Subsuperscript["W", 1, "-"]}}, 
+     {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 2, 
+        "+"], Subsuperscript["W", 2, "-"]}}, 
+     {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 3, 
+        "+"], Subsuperscript["W", 3, "-"]}}, 
+     {(-I/2)*Csc[Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subsuperscript["W", 4, 
+        "+"], Subsuperscript["W", 4, "-"]}}, 
+     {(2*I)*Cot[2*Subscript[\[Theta], "W"]]^2*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 1], 
+       Subscript["Z", 1]}}, {(2*I)*Cot[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 1], 
+       Subscript["A", 1]}}, {(-2*I)*Cot[2*Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 2], 
+       Subscript["Z", 2]}}, {(-2*I)*Cot[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 2], 
+       Subscript["A", 2]}}, {(-2*I)*Cot[2*Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 3], 
+       Subscript["Z", 3]}}, {(-2*I)*Cot[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 3], 
+       Subscript["A", 3]}}, {(-2*I)*Cot[2*Subscript[\[Theta], "W"]]^2*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 4], 
+       Subscript["Z", 4]}}, {(-2*I)*Cot[2*Subscript[\[Theta], "W"]]*
+       Subscript[e, "EM"]^2, {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["Z", 4], 
+       Subscript["A", 4]}}, {(2*I)*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["A", 1], 
+       Subscript["A", 1]}}, {(-2*I)*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["A", 2], 
+       Subscript["A", 2]}}, {(-2*I)*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["A", 3], 
+       Subscript["A", 3]}}, {(-2*I)*Subscript[e, "EM"]^2, 
+      {Subsuperscript[HiggsSector`Private`H, 3, "+"], 
+       Subsuperscript[HiggsSector`Private`H, 3, "-"], Subscript["A", 4], 
        Subscript["A", 4]}}, {(I/2)*Csc[Subscript[\[Theta], "W"]]^2*
        Subscript[e, "EM"]^2, {Superscript[HiggsSector`Private`G, 0], 
        Superscript[HiggsSector`Private`G, 0], Subsuperscript["W", 1, "+"], 
@@ -960,6 +1337,40 @@ rFRthreevertex = {{StringForm["`` ``", (-I)*Csc[2*Subscript[\[Theta], "W"]]*
        HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
           HiggsSector`Private`H, 2, "-"]], HoldForm[Subsuperscript["W", 
          \[Nu], "+"]]}}, {StringForm["`` ``", 
+       (-I)*Csc[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+       Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subscript[
+          HiggsSector`Private`a, 3]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/
+        2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "+"]], HoldForm[Subsuperscript["W", 
+         \[Nu], "-"]]}}, {StringForm["`` ``", 
+       -(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
+       Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "-"]], HoldForm[Subsuperscript["W", 
+         \[Nu], "+"]]}}, {StringForm["`` ``", 
+       I*Csc[2*Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+       Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subscript[
+          HiggsSector`Private`h, 3]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (-I/2)*Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "+"]], HoldForm[Subsuperscript["W", 
+         \[Nu], "-"]]}}, {StringForm["`` ``", 
+       (-I/2)*Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"], 
+       Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "-"]], HoldForm[Subsuperscript["W", 
+         \[Nu], "+"]]}}, {StringForm["`` ``", 
        -(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/2, 
        Superscript[g, \[Mu]*\[Nu]]], 
       {HoldForm[Subsuperscript[HiggsSector`Private`H, 2, "+"]], 
@@ -998,6 +1409,44 @@ rFRthreevertex = {{StringForm["`` ``", (-I)*Csc[2*Subscript[\[Theta], "W"]]*
       {HoldForm[Subsuperscript[HiggsSector`Private`H, 2, "-"]], 
        HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
           HiggsSector`Private`H, 2, "+"]], HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", -(Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/
+        2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subscript[
+          HiggsSector`Private`h, 3]], HoldForm[Subsuperscript["W", \[Nu], 
+         "-"]]}}, {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subscript[
+          HiggsSector`Private`a, 3]], HoldForm[Subsuperscript["W", \[Nu], 
+         "-"]]}}, {StringForm["`` ``", -(Cot[2*Subscript[\[Theta], "W"]]*
+         Subscript[e, "EM"]), Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "-"]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", -Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "-"]], HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (Csc[Subscript[\[Theta], "W"]]*Subscript[e, "EM"])/
+        2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subscript[
+          HiggsSector`Private`h, 3]], HoldForm[Subsuperscript["W", \[Nu], 
+         "+"]]}}, {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subscript[
+          HiggsSector`Private`a, 3]], HoldForm[Subsuperscript["W", \[Nu], 
+         "+"]]}}, {StringForm["`` ``", Cot[2*Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "+"]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subscript["\[PartialD]", \[Mu]]*Subsuperscript[
+          HiggsSector`Private`H, 3, "+"]], HoldForm[Subscript["A", \[Nu]]]}}, 
      {StringForm["`` ``", I*Csc[2*Subscript[\[Theta], "W"]]*
         Subscript[e, "EM"], Superscript[g, \[Mu]*\[Nu]]], 
       {HoldForm[Superscript[HiggsSector`Private`G, 0]], 
@@ -1196,6 +1645,76 @@ rFRfourvertex = {{StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
        HoldForm[Subscript["A", \[Nu]]]}}, 
      {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
         Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subsuperscript["W", \[Nu], "-"]]}}, 
+     {StringForm["`` ``", (2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subscript["Z", \[Mu]]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (-I/2)*Sec[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "-"]], 
+       HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "-"]], 
+       HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (-I/2)*Sec[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`h, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subsuperscript["W", \[Nu], "-"]]}}, 
+     {StringForm["`` ``", (2*I)*Csc[2*Subscript[\[Theta], "W"]]^2*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subscript["Z", \[Mu]]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", -(Sec[Subscript[\[Theta], "W"]]*
+          Subscript[e, "EM"]^2)/2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "-"]], 
+       HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (Csc[Subscript[\[Theta], "W"]]*
+         Subscript[e, "EM"]^2)/2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "-"]], 
+       HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (Sec[Subscript[\[Theta], "W"]]*
+         Subscript[e, "EM"]^2)/2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", -(Csc[Subscript[\[Theta], "W"]]*
+          Subscript[e, "EM"]^2)/2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subscript[HiggsSector`Private`a, 3]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
       {HoldForm[Subsuperscript[HiggsSector`Private`H, 2, "+"]], 
        HoldForm[Subsuperscript[HiggsSector`Private`H, 2, "-"]], 
        HoldForm[Subsuperscript["W", \[Mu], "+"]], 
@@ -1214,6 +1733,27 @@ rFRfourvertex = {{StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
        Superscript[g, \[Mu]*\[Nu]]], 
       {HoldForm[Subsuperscript[HiggsSector`Private`H, 2, "+"]], 
        HoldForm[Subsuperscript[HiggsSector`Private`H, 2, "-"]], 
+       HoldForm[Subscript["A", \[Mu]]], HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subsuperscript["W", \[Mu], "+"]], 
+       HoldForm[Subsuperscript["W", \[Nu], "-"]]}}, 
+     {StringForm["`` ``", (2*I)*Cot[2*Subscript[\[Theta], "W"]]^2*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subscript["Z", \[Mu]]], HoldForm[Subscript["Z", \[Nu]]]}}, 
+     {StringForm["`` ``", (2*I)*Cot[2*Subscript[\[Theta], "W"]]*
+        Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
+       HoldForm[Subscript["Z", \[Mu]]], HoldForm[Subscript["A", \[Nu]]]}}, 
+     {StringForm["`` ``", (2*I)*Subscript[e, "EM"]^2, 
+       Superscript[g, \[Mu]*\[Nu]]], 
+      {HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "+"]], 
+       HoldForm[Subsuperscript[HiggsSector`Private`H, 3, "-"]], 
        HoldForm[Subscript["A", \[Mu]]], HoldForm[Subscript["A", \[Nu]]]}}, 
      {StringForm["`` ``", (I/2)*Csc[Subscript[\[Theta], "W"]]^2*
         Subscript[e, "EM"]^2, Superscript[g, \[Mu]*\[Nu]]], 

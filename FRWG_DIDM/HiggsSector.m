@@ -52,12 +52,17 @@ m22 = Subscript[m,2,2];
 l1 = Subscript[\[Lambda],1];
 l2 = Subscript[\[Lambda],2];
 l3 = Subscript[\[Lambda],3];
+l3h = OverHat[Subscript[\[Lambda],3]];
 l4 = Subscript[\[Lambda],4];
+l4h = OverHat[Subscript[\[Lambda],4]];
 l5 = Subscript[\[Lambda],5];
+l6 = Subscript[\[Lambda],6];
+l8 = Subscript[\[Lambda],8];
+l9 = Subscript[\[Lambda],9];
 
-modelpars = {m11,m22,l1,l2,l3,l4,l5};
-modelrealpars = {m11,m22,l1,l2,l3,l4,l5};
-modelcomplexpars = {};
+modelpars = {m11,m22,l1,l2,l3,l3h,l4,l4h,l5,l6,l8,l9};
+modelrealpars = {m11,m22,l1,l2,l3,l3h,l4,l4h,l5,l6};
+modelcomplexpars = {l8,l9};
 
 
 (* general higgs doublet variables *)
@@ -71,7 +76,12 @@ b2 = Subscript[b,2];
 c2 = Subscript[c,2];
 d2 = Subscript[d,2];
 
-higgsvars = {a1,b1,c1,d1,a2,b2,c2,d2};
+a3 = Subscript[a,3];
+b3 = Subscript[b,3];
+c3 = Subscript[c,3];
+d3 = Subscript[d,3];
+
+higgsvars = {a1,b1,c1,d1,a2,b2,c2,d2,a3,b3,c3,d3};
 zerosubhiggs = Table[higgsvars[[i]]->0, {i,1,Length[higgsvars]}];
 
 
@@ -81,16 +91,20 @@ GP = Superscript[G,"+"];
 GM = Superscript[G,"-"];
 hSM = Subscript[h,"SM"];
 H2P = Subsuperscript[H,2,"+"];
+H3P = Subsuperscript[H,3,"+"];
 H2M = Subsuperscript[H,2,"-"];
+H3M = Subsuperscript[H,3,"-"];
 h2 = Subscript[h,2];
+h3 = Subscript[h,3];
 a2 = Subscript[a,2];
+a3 = Subscript[a,3];
 
-modelvars = {hSM,h2,a2,H2P,H2M,G0,GP,GM};
-modelrealvars = {hSM,h2,a2,G0};
-modelcomplexvars = {H2P,H2M,GP,GM};
+modelvars = {hSM,h2,a2,h3,a3,H2P,H2M,H3P,H3M,G0,GP,GM};
+modelrealvars = {hSM,h2,a2,h3,a3,G0};
+modelcomplexvars = {H2P,H2M,H3P,H3M,GP,GM};
 modelgoldstones = {G0,GP,GM};
 
-ConjugateHiggsVars[vars_] := vars[[{1,2,3,5,4,6,8,7}]];
+ConjugateHiggsVars[vars_] := vars[[{1,2,3,4,5,7,6,9,8,10,12,11}]];
 ConjugateHV[mcv_] := ConjugateHiggsVars[mcv];
 
 
@@ -107,17 +121,18 @@ Assuming[HiggsSectorAssumptions,
 
 
 (* Higgs-Potential *)
-HiggsPotential[HD1_,HD2_] := Simplify[ \
+l5 = 0;
+HiggsPotential[HD1_,HD2_,HD3_] := Simplify[ \
     - m11^2 * HiggsProduct[HD1,HD1] \
-    - m22^2 * HiggsProduct[HD2,HD2] \
+    - m22^2 * (HiggsProduct[HD2,HD2] + HiggsProduct[HD3,HD3]) \
     + l1 * HiggsProduct[HD1,HD1]^2 \
-    + l2 * HiggsProduct[HD2,HD2]^2 \
-    + l3 * HiggsProduct[HD1,HD1] * HiggsProduct[HD2,HD2] \
-    + l4 * HiggsProduct[HD1,HD2] * HiggsProduct[HD2,HD1] \
+    + l2 * (HiggsProduct[HD2,HD2]^2 + HiggsProduct[HD3,HD3]^2) \
+    + l3 * HiggsProduct[HD1,HD1] * (HiggsProduct[HD2,HD2] + HiggsProduct[HD3,HD3]) \
+    + l4 * (HiggsProduct[HD1,HD2]*HiggsProduct[HD2,HD1] + HiggsProduct[HD1,HD3]*HiggsProduct[HD3,HD1]) \
     \
-    + l5/2 * (HiggsProduct[HD2,HD1]^2) \
+    - l6/2 * (HiggsProduct[HD2,HD1]^2 + HiggsProduct[HD3,HD1]^2) \
     \
-    + l5/2 * (HiggsProduct[HD1,HD2]^2) \
+    - l6/2 * (HiggsProduct[HD1,HD2]^2 + HiggsProduct[HD1,HD3]^2) \
 ];
 
 
@@ -126,8 +141,9 @@ VEV = Sqrt[m11^2/l1/2];
 
 HD1m = HD[1/Sqrt[2]*(c1 + I*d1), VEV+1/Sqrt[2]*(a1 + I*b1)];
 HD2m = HD[1/Sqrt[2]*(c2 + I*d2), 1/Sqrt[2]*(a2 + I*b2)];
+HD3m = HD[1/Sqrt[2]*(c3 + I*d3), 1/Sqrt[2]*(a3 + I*b3)];
 
-V3Dm = HiggsPotential[HD1m,HD2m];
+V3Dm = HiggsPotential[HD1m,HD2m,HD3m];
 
 Print["HiggsSector: calculating mass matrix and vertices"];
 massmatrix = Simplify[D[V3Dm, {higgsvars, 2}] /. zerosubhiggs];
@@ -155,17 +171,18 @@ ChargedFieldTransformationMatrix[dim_,indreal_,indimag_] := Table[
 ];
 
 
-(* from c1,d1,c2,d2 to GP,GM,H2P,H2M *)
-CFTMH2PI = ChargedFieldTransformationMatrix[Length[higgsvars],7,8]; (* ChargedFieldTransformationMatrixInverse *)
+(* from c1,d1,c2,d2,c3,d3 to GP,GM,H2P,H2M,H3P,H3M *)
 CFTMGPI = ChargedFieldTransformationMatrix[Length[higgsvars],3,4];
-CFTMI = CFTMH2PI.CFTMGPI;
+CFTMH2PI = ChargedFieldTransformationMatrix[Length[higgsvars],7,8];
+CFTMH3PI = ChargedFieldTransformationMatrix[Length[higgsvars],11,12];
+CFTMI = CFTMH3PI.CFTMH2PI.CFTMGPI;
 
-(* from hSM,G0,GP,GM,h,a,H2P,H2M to hSM,h,a,H2P,H2M,G0,GP,GM *)
-PermuteVariablesI = IdentityMatrix[Length[higgsvars]];
-PermuteVariablesI = PermuteVariablesI[[{1,5,6,7,8,2,3,4}]];
+(* from a1,b1,GP,GM,a2,b2,H2P,H2M,a3,b3,H3P,H3M to hSM,a2,b2,a3,b3,H2P,H2M,H3P,H3M,G0,GP,GM *)
+PermuteVariablesI1 = IdentityMatrix[Length[higgsvars]];
+PermuteVariablesI1 = PermuteVariablesI1[[{1,5,6,9,10,7,8,11,12,2,3,4}]];
 
 (* all transformations combined *)
-VTMI = PermuteVariablesI.CFTMI; (* VariableTransformationMatrixInverse *)
+VTMI = PermuteVariablesI1.CFTMI;
 VTM = ConjugateTranspose[VTMI];
 
 
@@ -253,6 +270,7 @@ Save[tempfile, HiggsSectorAssumptions];
 
 Save[tempfile, HD1m];
 Save[tempfile, HD2m];
+Save[tempfile, HD3m];
 
 Save[tempfile, ConjugateHiggsVars];
 Save[tempfile, ConjugateHV];
